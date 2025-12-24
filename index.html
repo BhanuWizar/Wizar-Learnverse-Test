@@ -5,7 +5,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 
     <!-- Primary SEO -->
-    <title>LearnVerse-Test | Wizar</title>
+    <title>LearnVerse | Wizar</title>
     <meta name="description" content="LearnVerse by Wizar is a game-based platform where kids learn AI and coding through interactive 3D/AR experiences, quests, and activities.">
     <link rel="canonical" href="https://www.wizar.io/" />
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
@@ -149,17 +149,18 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/Learnverse_Oct_16.loader.js";
+      var loaderUrl = buildUrl + "/9853637125e801e9aae48e78dbbdcfca.loader.js";
       var config = {
-        dataUrl: buildUrl + "/Learnverse_Oct_16.data.unityweb",
-        frameworkUrl: buildUrl + "/Learnverse_Oct_16.framework.js.unityweb",
-        codeUrl: buildUrl + "/Learnverse_Oct_16.wasm.unityweb",
+        dataUrl: buildUrl + "/b2d95babc42454232d4fa5597a0a8790.data.unityweb",
+        frameworkUrl: buildUrl + "/6409a09ae8a480ee8a3afd5fc5205f6b.framework.js.unityweb",
+        codeUrl: buildUrl + "/3f8c79f20d8a785a89d31b038a54edf9.wasm.unityweb",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "Wizar",
         productName: "LearnVerse",
         productVersion: "0.1",
         showBanner: unityShowBanner,
       };
+
 
       // Mobile viewport + class (avoid duplicate viewport tag)
       if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
@@ -185,11 +186,12 @@
       let firstInteractionOccurred = false;
 
       function requestFullscreenOnce() {
-        if (firstInteractionOccurred) return;
-        firstInteractionOccurred = true;
-        if (unityInstanceRef && unityInstanceRef.SetFullscreen) {
-          unityInstanceRef.SetFullscreen(1);
-        }
+        //if (firstInteractionOccurred) return;
+        //firstInteractionOccurred = true;
+        // Fullscreen upon first click
+        // if (unityInstanceRef && unityInstanceRef.SetFullscreen) {
+        //   unityInstanceRef.SetFullscreen(1);
+        // }
       }
 
       // pointerdown covers mouse + touch; keydown as backup

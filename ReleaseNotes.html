@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Release Notes — LearnVerse</title>
+  <style>
+    :root{
+      --bg:#0f1724;
+      --card:#0b1220;
+      --muted:#9aa4b2;
+      --accent:#5eead4;
+      --glass: rgba(255,255,255,0.04);
+      --radius:12px;
+    }
+
+    html,body{
+      height:100%;
+      margin:0;
+      font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      background: radial-gradient(1200px 600px at 10% 10%, rgba(94,234,212,0.06), transparent),
+                  linear-gradient(180deg, #071021 0%, #071728 50%, #081018 100%);
+      color: #e6eef6;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+    }
+
+    .wrap{
+      max-width:820px;
+      margin:48px auto;
+      padding:28px;
+    }
+
+    .card{
+      background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+      border: 1px solid rgba(255,255,255,0.04);
+      box-shadow: 0 10px 30px rgba(2,6,23,0.6);
+      border-radius: var(--radius);
+      padding:28px;
+      backdrop-filter: blur(6px);
+    }
+
+    header{
+      display:flex;
+      align-items:center;
+      gap:16px;
+      margin-bottom:18px;
+    }
+
+    .logo{
+      width:48px;
+      height:48px;
+      flex:0 0 48px;
+      border-radius:10px;
+      background: linear-gradient(135deg, var(--accent), #60a5fa 80%);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      color:#042027;
+      font-weight:700;
+      font-size:18px;
+      box-shadow: 0 6px 18px rgba(94,234,212,0.08), inset 0 -4px 12px rgba(0,0,0,0.2);
+    }
+
+    h1{
+      margin:0;
+      font-size:18px;
+      color:#e6f6f2;
+      letter-spacing:0.2px;
+    }
+
+    h2{
+      margin-top:20px;
+      margin-bottom:8px;
+      font-size:14px;
+      color:#d7e9e2;
+    }
+
+    p, ul{
+      margin:0 0 12px 0;
+      color:var(--muted);
+      font-size:15px;
+      line-height:1.6;
+    }
+
+    ul{
+      padding-left:18px;
+      list-style:none;
+    }
+    ul li{
+      position:relative;
+      padding-left:22px;
+      margin:8px 0;
+    }
+    ul li:before{
+      content:"";
+      width:10px;
+      height:10px;
+      border-radius:2px;
+      background:var(--accent);
+      position:absolute;
+      left:0;
+      top:7px;
+      box-shadow: 0 2px 8px rgba(94,234,212,0.12);
+    }
+
+    .meta-row{
+      display:flex;
+      justify-content:flex-end; /* keep release dates aligned right when alone */
+      gap:12px;
+      align-items:center;
+      margin-top:18px;
+      flex-wrap:wrap;
+    }
+
+    /* When a meta-row comes immediately after the updates list, add extra spacing
+       so the next release date is visually separated from the previous updates. */
+    ul + .meta-row{
+      margin-top:48px;
+    }
+
+    .releasedate{
+      background:var(--glass);
+      color:#e6f6f2;
+      padding:8px 12px;
+      border-radius:999px;
+      font-size:13px;
+      border:1px solid rgba(255,255,255,0.02);
+    }
+
+    .note{
+      font-size:13px;
+      color: #9fb2bf;
+      margin-top:6px;
+    }
+
+    @media (max-width:560px){
+      .wrap{ padding:18px; margin:20px auto; }
+      header{ gap:12px; }
+      .logo{ width:44px; height:44px; font-size:16px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <header>
+        <div class="logo">LV</div>
+        <div>
+          <h1>LearnVerse — Release Notes</h1>
+          <div class="note">Stable web release focused on WebGL delivery and core UX improvements.</div>
+        </div>
+      </header>
+
+      <div class="meta-row">
+        <div class="releasedate">Release date: 2025-11-19</div>
+      </div>
+      <h2>Summary</h2>
+      <p>Basic web release of LearnVerse: Unity WebGL build delivering interactive AI & coding learning experiences for kids.</p>
+
+      <h2>Updates</h2>
+      <ul>
+  <li>Obstacle course is improved as per the feedback like the options unselected by default and collisions</li>
+  <li>Added new topic icons for AI literacy                                                              </li>
+  <li>Added the Lab theme switch inside the lab environment                                              </li>
+  <li>Enabling of the First person view and Third person view in the Obstacle course                     </li>
+  <li>Handling of the WebActivity                                                                        </li>
+  <li>Added UX enhancement of single back click for the Panel related activities                         </li>
+  <li>Enabled user authentication check during login                                                     </li>
+  <li>Modified the XRLEs scripts and UI                                                                  </li>
+  <li>Removed the session count restrictions WebActivity                                                 </li>
+  <li>Added new XRLEs (Educational tools, Attendance Monitoring system, sign translator & crossing Maze1)</li>
+      </ul>
+
+      <div class="meta-row">
+        <div class="releasedate">Release date: 2025-11-29</div>
+      </div>
+<h2>Summary</h2>
+      <p>Web release of LearnVerse: Including password visibility feature.</p>
+
+      <h2>Updates</h2>
+      <ul>
+  <li>Added the password icon visibility toggle feature</li>
+  <li>Added the blinking cursor in the input fields</li>
+      </ul>
+      
+      <div class="meta-row">
+        <div class="releasedate">Release date: 2025-12-03</div>
+      </div>
+<h2>Summary</h2>
+      <p>Web release of LearnVerse: Includes navigation and multiple activities feature.</p>
+
+      <h2>Updates</h2>
+      <ul>
+  <li>Added Navigation across different learning activities feature</li>
+  <li>Included access of PDF-Quiz as an individual learning activity from the trail</li>
+  <li>Enabled handling of multiple learning activities per lab</li>
+  <li>Single portal access per activity feature</li>
+      </ul>
+      
+      <div class="meta-row">
+        <div class="releasedate">Release date: 2025-12-05</div>
+      </div>
+<h2>Summary</h2>
+      <p>Web release of LearnVerse: Includes activity Pointer & ensurage of tick marks.</p>
+
+      <h2>Updates</h2>
+      <ul>
+  <li>Includes activity Pointer for different learning activities feature</li>
+  <li>Included access of PDF-Quiz for multiple quiz independent of PDF indices</li>
+  <li>Enabled handling of trail screen upon closing of learning actvities and upon acknowledging messages</li>
+  <li>Ensurage of tick marks for completed activities</li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>
